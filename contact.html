@@ -39,6 +39,7 @@
 	<link rel="stylesheet" href="css/magnific-popup.css">
 
 	<link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
 
 	<!-- Modernizr JS -->
@@ -47,7 +48,157 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+        <style>
+            /* Footer Styles with White Neumorphic Effect */
+            #footer {
+                padding: 8em 0;
+                display: block;
+                width: 100%;
+                background: #f0f0f3;
+                position: relative;
+                overflow: hidden;
+                border-top: 1px solid rgba(255, 255, 255, 0.8);
+            }
 
+            #footer h2 {
+                color: #333;
+                letter-spacing: 1px;
+                font-weight: 600;
+                margin-bottom: 2em;
+            }
+
+            #footer p:last-child {
+                margin-bottom: 0;
+            }
+
+            #footer p.colorlib-social-icons a:hover,
+            #footer p.colorlib-social-icons a:focus {
+                text-decoration: none !important;
+            }
+
+            #footer p.colorlib-social-icons i {
+                font-size: 24px;
+                color: rgba(225, 29, 70);
+            }
+
+            #footer p .block {
+                color: #333;
+                font-size: 14px;
+            }
+
+            /* Social Icons with Neumorphic Effect */
+            #footer .colorlib-social-icons {
+                display: flex;
+                gap: 15px;
+                margin-top: 20px;
+            }
+
+            #footer .colorlib-social-icons a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: #f0f0f3;
+                box-shadow: 8px 8px 16px #d1d1d4,
+                -8px -8px 16px #ffffff;
+                transition: all 0.3s ease;
+            }
+
+            #footer .colorlib-social-icons a:hover {
+                box-shadow: 4px 4px 8px #d1d1d4,
+                -4px -4px 8px #ffffff;
+                transform: translateY(2px);
+            }
+
+            /* Subscribe Form with Neumorphic Effect */
+            #footer .subscribe .form-group {
+                position: relative;
+            }
+
+            #footer .subscribe .form-control {
+                -webkit-box-shadow: inset 5px 5px 10px #d1d1d4,
+                inset -5px -5px 10px #ffffff;
+                -moz-box-shadow: inset 5px 5px 10px #d1d1d4,
+                inset -5px -5px 10px #ffffff;
+                box-shadow: inset 5px 5px 10px #d1d1d4,
+                inset -5px -5px 10px #ffffff;
+                border: none;
+                font-size: 16px;
+                background: #f0f0f3;
+                font-weight: 400;
+                margin-bottom: 15px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                border-radius: 20px;
+                padding: 15px 20px;
+            }
+
+            #footer .subscribe .form-control:focus,
+            #footer .subscribe .form-control:active {
+                -webkit-box-shadow: inset 2px 2px 5px #d1d1d4,
+                inset -2px -2px 5px #ffffff;
+                -moz-box-shadow: inset 2px 2px 5px #d1d1d4,
+                inset -2px -2px 5px #ffffff;
+                box-shadow: inset 2px 2px 5px #d1d1d4,
+                inset -2px -2px 5px #ffffff;
+                border: none;
+            }
+
+            #footer .subscribe .btn-custom {
+                width: 100%;
+                padding: 15px 0;
+                font-size: 16px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                border-radius: 20px;
+                background: #f0f0f3;
+                border: none;
+                color: #333;
+                font-weight: 600;
+                box-shadow: 8px 8px 16px #d1d1d4,
+                -8px -8px 16px #ffffff;
+                transition: all 0.3s ease;
+            }
+
+            #footer .subscribe .btn-custom:hover {
+                box-shadow: 4px 4px 8px #d1d1d4,
+                -4px -4px 8px #ffffff;
+                background: rgba(225, 29, 70);
+                color: #fff;
+            }
+
+            /* Copyright Section */
+            #footer .row:last-child {
+                margin-top: 4em;
+                padding-top: 2em;
+                border-top: 1px solid rgba(0, 0, 0, 0.05);
+            }
+
+            #footer .row:last-child p {
+                color: #666;
+                font-size: 14px;
+            }
+
+            /* Content Box with Neumorphic Effect */
+            .footer-content-box {
+                background: #f0f0f3;
+                border-radius: 20px;
+                padding: 30px;
+                box-shadow: 10px 10px 20px #d1d1d4,
+                -10px -10px 20px #ffffff;
+                transition: all 0.3s ease;
+                height: 100%;
+            }
+
+            .footer-content-box:hover {
+                box-shadow: 5px 5px 10px #d1d1d4,
+                -5px -5px 10px #ffffff;
+            }
+        </style>
 	</head>
 	<body>
 
@@ -179,61 +330,53 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-pb-sm">
-                            <div class="row">
-                                <div class="col-md-10">
-                                    <h2>Let's Connect</h2>
-                                    <p>As a front-end developer, I specialize in creating responsive, user-friendly interfaces using modern technologies like React and Angular. I'm proficient in HTML5, CSS3, JavaScript (ES6+), and frameworks like Bootstrap for rapid prototyping.</p>
-                                    <p><a href="mailto:your.email@example.com">nandikakaweesha4005@gmail.com</a></p>
-                                    <p class="colorlib-social-icons">
-                                        <a href="#"><i class="icon-github"></i></a>
-                                        <a href="#"><i class="icon-linkedin"></i></a>
-                                        <a href="#"><i class="icon-twitter3"></i></a>
-                                        <a href="#"><i class="icon-codepen"></i></a>
-                                    </p>
-                                </div>
+                            <div class="footer-content-box">
+                                <h2>Let's Connect</h2>
+                                <p>As a front-end developer, I specialize in creating responsive, user-friendly interfaces using modern technologies like React and Angular. I'm proficient in HTML5, CSS3, JavaScript (ES6+), and frameworks like Bootstrap for rapid prototyping.</p>
+                                <p><a href="mailto:nandikakaweesha4005@gmail.com">nandikakaweesha4005@gmail.com</a></p>
+                                <p class="colorlib-social-icons">
+                                    <a href="https://github.com/NandikaKW" target="_blank"><i class="icon-github"></i></a>
+                                    <a href="https://www.linkedin.com/in/nandika-kaweesha-7b1961321/" target="_blank"><i class="icon-linkedin"></i></a>
+                                    <a href="https://t.me/NandikaKaweesha" target="_blank"><i class="ri-telegram-line"></i></a>
+                                    <a href="https://wa.me/94715152955" target="_blank"><i class="ri-whatsapp-line"></i></a>
+                                </p>
                             </div>
                         </div>
+
                         <div class="col-md-4 col-pb-sm">
-                            <h2>Recent Projects</h2>
-                            <div class="f-entry">
-                                <a href="#" class="featured-img" style="background-image: url(images/work-1.jpg);"></a>
-                                <div class="desc">
-                                    <span>June 2023</span>
-                                    <h3><a href="#">E-commerce Dashboard (React)</a></h3>
-                                </div>
-                            </div>
-                            <div class="f-entry">
-                                <a href="#" class="featured-img" style="background-image: url(images/work-2.jpg);"></a>
-                                <div class="desc">
-                                    <span>April 2023</span>
-                                    <h3><a href="#">Task Management (Angular)</a></h3>
-                                </div>
-                            </div>
-                            <div class="f-entry">
-                                <a href="#" class="featured-img" style="background-image: url(images/work-3.jpg);"></a>
-                                <div class="desc">
-                                    <span>February 2023</span>
-                                    <h3><a href="#">Responsive Portfolio (Bootstrap)</a></h3>
-                                </div>
+                            <div class="footer-content-box">
+                                <h2>My Skills</h2>
+                                <ul style="list-style: none; padding-left: 0;">
+                                    <li style="margin-bottom: 10px;">✓ Frontend Development</li>
+                                    <li style="margin-bottom: 10px;">✓ Responsive Web Design</li>
+                                    <li style="margin-bottom: 10px;">✓ React & Angular</li>
+                                    <li style="margin-bottom: 10px;">✓ UI/UX Implementation</li>
+                                    <li style="margin-bottom: 10px;">✓ Cross-Browser Compatibility</li>
+                                    <li style="margin-bottom: 10px;">✓ Performance Optimization</li>
+                                </ul>
                             </div>
                         </div>
+
                         <div class="col-md-4 col-pb-sm">
-                            <h2>Get In Touch</h2>
-                            <p>Interested in collaborating or have a project in mind? Send me a message or subscribe to my newsletter for updates on my latest work and front-end development tips.</p>
-                            <div class="subscribe text-center">
-                                <div class="form-group">
-                                    <input type="text" class="form-control text-center" placeholder="Enter Email address">
-                                    <input type="submit" value="Subscribe" class="btn btn-primary btn-custom">
+                            <div class="footer-content-box">
+                                <h2>Get In Touch</h2>
+                                <p>Interested in collaborating or have a project in mind? Send me a message or subscribe to my newsletter for updates on my latest work and front-end development tips.</p>
+                                <div class="subscribe text-center">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control text-center" placeholder="Enter Email address">
+                                        <input type="submit" value="Subscribe" class="btn btn-primary btn-custom">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <p>
                                 &copy;
-                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |
-                                Crafted with <i class="icon-heart4" aria-hidden="true"></i> by Nandika kaweesha Fernando
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                                All rights reserved | Crafted with <i class="icon-heart4" aria-hidden="true"></i> by Nandika Kaweesha Fernando
                             </p>
                         </div>
                     </div>

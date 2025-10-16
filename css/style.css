@@ -14,7 +14,7 @@
 body {
     font-family: "Karla", Arial, sans-serif;
     line-height: 1.8;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     background: #fafafa;
     color: gray; }
@@ -47,14 +47,15 @@ a:focus, a:active {
 p, span {
     margin-bottom: 1.5em;
     font-weight: 400;
-    font-family: "Karla", Arial, sans-serif; }
+    font-family: "Times New Roman", Times, serif;
+}
 
 ul, ol {
     display: block;
     margin-bottom: 1.5em; }
 
 span {
-    font-size: 18px;
+    font-size: 20px;
     color: rgba(114, 114, 114, 0.8); }
 
 h1, h2, h3, h4, h5, h6 {
